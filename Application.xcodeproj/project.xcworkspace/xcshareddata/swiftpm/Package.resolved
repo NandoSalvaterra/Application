@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Library",
+        "repositoryURL": "git@github.com:NandoSalvaterra/Library.git",
+        "state": {
+          "branch": null,
+          "revision": "4a0c39cf6b539c5b7ba3680c71bda105a52ab0bb",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

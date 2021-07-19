@@ -3,23 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5B85A51F26A260A4007A83E9 /* ApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A51E26A260A4007A83E9 /* ApplicationApp.swift */; };
-		5B85A52126A260A4007A83E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A52026A260A4007A83E9 /* ContentView.swift */; };
 		5B85A52326A260A6007A83E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B85A52226A260A6007A83E9 /* Assets.xcassets */; };
 		5B85A52626A260A6007A83E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B85A52526A260A6007A83E9 /* Preview Assets.xcassets */; };
+		5B85A52F26A4BC6F007A83E9 /* Library in Frameworks */ = {isa = PBXBuildFile; productRef = 5B85A52E26A4BC6F007A83E9 /* Library */; };
+		5B85A53426A4DFE8007A83E9 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A53326A4DFE8007A83E9 /* AsyncImage.swift */; };
+		5B85A53626A4DFF8007A83E9 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A53526A4DFF8007A83E9 /* ImageLoader.swift */; };
+		5B85A53826A4E050007A83E9 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A53726A4E050007A83E9 /* ProductListView.swift */; };
+		5B85A53A26A4E061007A83E9 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A53926A4E061007A83E9 /* ProductRowView.swift */; };
+		5B85A53D26A4F526007A83E9 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A53C26A4F526007A83E9 /* FontExtension.swift */; };
+		5B85A54026A4F9A1007A83E9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A53F26A4F9A1007A83E9 /* SearchBar.swift */; };
+		5B85A54326A50675007A83E9 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A54226A50674007A83E9 /* Product.swift */; };
+		5B85A54526A50801007A83E9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B85A54426A50801007A83E9 /* Colors.xcassets */; };
+		5B85A54826A50954007A83E9 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A54726A50954007A83E9 /* CustomColor.swift */; };
+		5B85A54A26A5101E007A83E9 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B85A51B26A260A4007A83E9 /* Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Application.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B85A51E26A260A4007A83E9 /* ApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationApp.swift; sourceTree = "<group>"; };
-		5B85A52026A260A4007A83E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B85A52226A260A6007A83E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B85A52526A260A6007A83E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B85A52726A260A6007A83E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B85A53326A4DFE8007A83E9 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
+		5B85A53526A4DFF8007A83E9 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		5B85A53726A4E050007A83E9 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		5B85A53926A4E061007A83E9 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		5B85A53C26A4F526007A83E9 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		5B85A53F26A4F9A1007A83E9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5B85A54226A50674007A83E9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5B85A54426A50801007A83E9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5B85A54726A50954007A83E9 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B85A52F26A4BC6F007A83E9 /* Library in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +73,11 @@
 			isa = PBXGroup;
 			children = (
 				5B85A51E26A260A4007A83E9 /* ApplicationApp.swift */,
-				5B85A52026A260A4007A83E9 /* ContentView.swift */,
+				5B85A53026A4DF10007A83E9 /* Product */,
+				5B85A53126A4DF1F007A83E9 /* Components */,
+				5B85A53B26A4F518007A83E9 /* Extension */,
 				5B85A52226A260A6007A83E9 /* Assets.xcassets */,
+				5B85A54426A50801007A83E9 /* Colors.xcassets */,
 				5B85A52726A260A6007A83E9 /* Info.plist */,
 				5B85A52426A260A6007A83E9 /* Preview Content */,
 			);
@@ -67,6 +90,68 @@
 				5B85A52526A260A6007A83E9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B85A53026A4DF10007A83E9 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A53726A4E050007A83E9 /* ProductListView.swift */,
+				5B85A53926A4E061007A83E9 /* ProductRowView.swift */,
+				5B85A54126A5064D007A83E9 /* Model */,
+				5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		5B85A53126A4DF1F007A83E9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A54626A50944007A83E9 /* Color */,
+				5B85A53E26A4F98E007A83E9 /* SearchBar */,
+				5B85A53226A4DFD8007A83E9 /* AsyncImage */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5B85A53226A4DFD8007A83E9 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A53326A4DFE8007A83E9 /* AsyncImage.swift */,
+				5B85A53526A4DFF8007A83E9 /* ImageLoader.swift */,
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		5B85A53B26A4F518007A83E9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A53C26A4F526007A83E9 /* FontExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5B85A53E26A4F98E007A83E9 /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A53F26A4F9A1007A83E9 /* SearchBar.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		5B85A54126A5064D007A83E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A54226A50674007A83E9 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B85A54626A50944007A83E9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A54726A50954007A83E9 /* CustomColor.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +170,9 @@
 			dependencies = (
 			);
 			name = Application;
+			packageProductDependencies = (
+				5B85A52E26A4BC6F007A83E9 /* Library */,
+			);
 			productName = Application;
 			productReference = 5B85A51B26A260A4007A83E9 /* Application.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +200,9 @@
 				Base,
 			);
 			mainGroup = 5B85A51226A260A4007A83E9;
+			packageReferences = (
+				5B85A52D26A4BC6F007A83E9 /* XCRemoteSwiftPackageReference "Library" */,
+			);
 			productRefGroup = 5B85A51C26A260A4007A83E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B85A54526A50801007A83E9 /* Colors.xcassets in Resources */,
 				5B85A52626A260A6007A83E9 /* Preview Assets.xcassets in Resources */,
 				5B85A52326A260A6007A83E9 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B85A52126A260A4007A83E9 /* ContentView.swift in Sources */,
+				5B85A54026A4F9A1007A83E9 /* SearchBar.swift in Sources */,
+				5B85A54326A50675007A83E9 /* Product.swift in Sources */,
+				5B85A54826A50954007A83E9 /* CustomColor.swift in Sources */,
+				5B85A54A26A5101E007A83E9 /* ProductListViewModel.swift in Sources */,
+				5B85A53D26A4F526007A83E9 /* FontExtension.swift in Sources */,
+				5B85A53A26A4E061007A83E9 /* ProductRowView.swift in Sources */,
+				5B85A53826A4E050007A83E9 /* ProductListView.swift in Sources */,
+				5B85A53426A4DFE8007A83E9 /* AsyncImage.swift in Sources */,
+				5B85A53626A4DFF8007A83E9 /* ImageLoader.swift in Sources */,
 				5B85A51F26A260A4007A83E9 /* ApplicationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B85A52D26A4BC6F007A83E9 /* XCRemoteSwiftPackageReference "Library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:NandoSalvaterra/Library.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B85A52E26A4BC6F007A83E9 /* Library */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B85A52D26A4BC6F007A83E9 /* XCRemoteSwiftPackageReference "Library" */;
+			productName = Library;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B85A51326A260A4007A83E9 /* Project object */;
 }
