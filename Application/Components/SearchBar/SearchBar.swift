@@ -14,7 +14,7 @@ struct SearchBar: View {
 
     var body: some View {
         HStack {
-            TextField("Pesquisar preço", text: $text)
+            TextField("search_by_price".localized, text: $text)
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
@@ -45,11 +45,12 @@ struct SearchBar: View {
 
             if isEditing {
                 Button(action: {
+                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                     self.isEditing = false
                     self.text = ""
 
                 }) {
-                    Text("Cancel")
+                    Text("cancel".localized)
                 }
                 .padding(.trailing, 10)
                 .transition(.move(edge: .trailing))

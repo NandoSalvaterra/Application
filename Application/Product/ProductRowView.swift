@@ -14,7 +14,7 @@ struct ProductRowView: View {
     var body: some View {
         HStack(spacing: 0) {
             AsyncImage(
-                url: URL(string: "http://lorempixel.com/640/480/people/")!,
+                url: URL(string: product.imageURL ?? "")!,
                 placeholder: { ProgressView() },
                 image: { Image(uiImage: $0).resizable() }
             )
@@ -28,28 +28,32 @@ struct ProductRowView: View {
                 Text(product.name ?? "")
                     .font(.headline)
 
-                Text(product.information ?? "")
+                Text("\("description".localized): \(product.information ?? "")")
                     .font(.caption)
 
                 HStack {
-                    Text("R$ 123,52")
+                    Text("R$ \(product.price ?? "")")
                         .font(.caption)
                         .fixedSize()
                         .padding(6)
-                        .background(Capsule().fill(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))))
-
+                        .background(Capsule().fill(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1))))
 
                     HStack(spacing: 2) {
                         Image(systemName: "clock")
-                        Text("10/02/2021")
+                        Text(product.created?.readableText ?? "")
                             .font(.caption)
                     }
                     .padding(4)
-                    .background(Capsule().fill(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))))
+                    .background(Capsule().fill(Color(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1))))
 
                     Image(systemName: "pencil.tip.crop.circle")
-                        .foregroundColor(.blue)
-                }
+                        .foregroundColor(Color.white)
+                        .padding(4)
+
+                        .background(Color(product.color!.uiColor()))
+                        .cornerRadius(16)
+
+                }.padding(.top, 6)
 
             }.padding(.horizontal, 8)
             

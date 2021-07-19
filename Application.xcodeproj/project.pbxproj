@@ -21,6 +21,9 @@
 		5B85A54526A50801007A83E9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B85A54426A50801007A83E9 /* Colors.xcassets */; };
 		5B85A54826A50954007A83E9 /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A54726A50954007A83E9 /* CustomColor.swift */; };
 		5B85A54A26A5101E007A83E9 /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */; };
+		5B85A54F26A59D24007A83E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B85A55126A59D24007A83E9 /* Localizable.strings */; };
+		5B85A55426A59E8C007A83E9 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A55326A59E8C007A83E9 /* StringExtension.swift */; };
+		5B85A55626A5A899007A83E9 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B85A55526A5A899007A83E9 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,10 @@
 		5B85A54426A50801007A83E9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5B85A54726A50954007A83E9 /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
 		5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		5B85A55026A59D24007A83E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5B85A55226A59D29007A83E9 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5B85A55326A59E8C007A83E9 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		5B85A55526A5A899007A83E9 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +83,7 @@
 				5B85A53026A4DF10007A83E9 /* Product */,
 				5B85A53126A4DF1F007A83E9 /* Components */,
 				5B85A53B26A4F518007A83E9 /* Extension */,
-				5B85A52226A260A6007A83E9 /* Assets.xcassets */,
-				5B85A54426A50801007A83E9 /* Colors.xcassets */,
-				5B85A52726A260A6007A83E9 /* Info.plist */,
-				5B85A52426A260A6007A83E9 /* Preview Content */,
+				5B85A54C26A51430007A83E9 /* Resources */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -97,8 +101,8 @@
 			children = (
 				5B85A53726A4E050007A83E9 /* ProductListView.swift */,
 				5B85A53926A4E061007A83E9 /* ProductRowView.swift */,
+				5B85A54B26A51377007A83E9 /* ViewModel */,
 				5B85A54126A5064D007A83E9 /* Model */,
-				5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -126,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				5B85A53C26A4F526007A83E9 /* FontExtension.swift */,
+				5B85A55326A59E8C007A83E9 /* StringExtension.swift */,
+				5B85A55526A5A899007A83E9 /* DateExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -152,6 +158,26 @@
 				5B85A54726A50954007A83E9 /* CustomColor.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		5B85A54B26A51377007A83E9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A54926A5101E007A83E9 /* ProductListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B85A54C26A51430007A83E9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B85A52426A260A6007A83E9 /* Preview Content */,
+				5B85A52726A260A6007A83E9 /* Info.plist */,
+				5B85A52226A260A6007A83E9 /* Assets.xcassets */,
+				5B85A54426A50801007A83E9 /* Colors.xcassets */,
+				5B85A55126A59D24007A83E9 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +224,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 5B85A51226A260A4007A83E9;
 			packageReferences = (
@@ -218,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B85A54526A50801007A83E9 /* Colors.xcassets in Resources */,
+				5B85A54F26A59D24007A83E9 /* Localizable.strings in Resources */,
 				5B85A52626A260A6007A83E9 /* Preview Assets.xcassets in Resources */,
 				5B85A52326A260A6007A83E9 /* Assets.xcassets in Resources */,
 			);
@@ -231,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B85A54026A4F9A1007A83E9 /* SearchBar.swift in Sources */,
+				5B85A55626A5A899007A83E9 /* DateExtension.swift in Sources */,
 				5B85A54326A50675007A83E9 /* Product.swift in Sources */,
 				5B85A54826A50954007A83E9 /* CustomColor.swift in Sources */,
 				5B85A54A26A5101E007A83E9 /* ProductListViewModel.swift in Sources */,
@@ -239,11 +268,24 @@
 				5B85A53826A4E050007A83E9 /* ProductListView.swift in Sources */,
 				5B85A53426A4DFE8007A83E9 /* AsyncImage.swift in Sources */,
 				5B85A53626A4DFF8007A83E9 /* ImageLoader.swift in Sources */,
+				5B85A55426A59E8C007A83E9 /* StringExtension.swift in Sources */,
 				5B85A51F26A260A4007A83E9 /* ApplicationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B85A55126A59D24007A83E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B85A55026A59D24007A83E9 /* en */,
+				5B85A55226A59D29007A83E9 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5B85A52826A260A6007A83E9 /* Debug */ = {
@@ -368,9 +410,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Application/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Application/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Application/Info.plist;
+				INFOPLIST_FILE = Application/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -389,9 +431,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Application/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Application/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Application/Info.plist;
+				INFOPLIST_FILE = Application/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -433,7 +475,7 @@
 			repositoryURL = "git@github.com:NandoSalvaterra/Library.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 2.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

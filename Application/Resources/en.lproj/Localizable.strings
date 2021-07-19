@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  Application
+
+  Created by Luiz Fernando Salvaterra on 19/07/21.
+  
+*/
+
+"products" = "Products";
+"search_by_price" = "Search by price";
+"search" = "Search:";
+"expensive" = "The most expensive";
+"cheapest" = "The cheapest";
+"clear_filter" = "Clear filter";
+"currency" = "$";
+"description" = "Description";
+"cancel" = "Cancel";
+"error" = "Error";
+"error_message" = "Something went wrong executing the task.";
